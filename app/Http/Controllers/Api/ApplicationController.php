@@ -35,7 +35,7 @@ class ApplicationController extends Controller
     public function store(ApplicationRequest $request): \Illuminate\Contracts\Foundation\Application|\Illuminate\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
     {
         $this->applicationService->store($request->validated());
-        return redirect(url('http://127.0.0.1:5500/'));
+        return redirect(url('https://stately-faloodeh-c4643c.netlify.app/'));
     }
 
     /**
